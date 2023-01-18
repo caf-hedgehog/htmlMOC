@@ -14,7 +14,11 @@
     <div class="position-absolute h-100 w-100 m-0 d-flex align-items-center justify-content-center bg-light">
         <div class="container p-5 bg-body col-4">
             <form>
-                <h3 class="mb-3 text-center">ログイン</h3>
+                <h3 class="mb-3 text-center">ユーザー登録</h3>
+                <div class="mb-3">
+                    <label for="name" class="form-label">ユーザー名</label>
+                    <input type="text" class="form-control border-0 border-bottom" id="name" placeholder="横浜花子">
+                </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">メールアドレス</label>
                     <input type="email" class="form-control border-0 border-bottom" id="email"
@@ -22,14 +26,19 @@
                 </div>
                 <div class="mb-4">
                     <label for="password" class="form-label">パスワード</label>
-                    <input type="password" class="form-control border-0 border-bottom" id="password">
+                    <input type="password" class="form-control border-0 border-bottom" id="password"
+                        placeholder="3文字以上">
+                </div>
+                <div class="mb-4">
+                    <label for="confirm" class="form-label">パスワード(確認用)</label>
+                    <input type="password" class="form-control border-0 border-bottom" id="confirm" placeholder="3文字以上">
                 </div>
                 <div class="d-grid gap-2 mb-4">
-                    <button type="submit" class="btn btn-primary">Login</button>
+                    <button type="submit" class="btn btn-primary">Register</button>
                 </div>
             </form>
             <div class="text-center">
-                <a href="./register.html">アカウントを作成</a>
+                <a href="./login.html">ログイン画面</a>
             </div>
         </div>
     </div>
